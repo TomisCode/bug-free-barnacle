@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Destructuring Arrays and Objects, and All the Rest</title>
+</head>
+<body>
+
+    <h1>Learning about Destructuring Arrays and Objects, and All the Rest</h1>
+
+
+
+
+<div>
+    <script>
+        var arr = ["Tomi", "Molly", "Chevy", "Findus", "Leo", "Magnus", "Chase"]
+        // // const tomi = arr[0]
+        // // const molly = arr[1]
+
+       // let [tomi, molly, chevy] = arr
+        let [tomi, molly, chevy, ...everyoneElse] = arr
+        console.log(everyoneElse)
+
+         var fullName = prompt("What is your FULL name?") // string
+        // Andrea Dybendal
+        // let [firstName, lastName] = fullName.split(' ')
+        //     fullName = fullName.split(' ')
+        // const firstName = fullName[0]
+        // const lastName = fullName[1]
+
+        // console.log(firstName, " is the first name")
+        // console.log(lastName, " is the last name")
+
+
+        const person = {
+            "name": "DEFINITELY NOT TOMI",
+            'age': 20,
+            'cats': 2,
+            'food': 'lasagna',
+            'color': 'green'
+        }
+
+        let {
+            // key: newVarNameIs
+            name,
+            food,
+            color = 'blue',
+        } = person
+        console.log("Name is ", name)
+        console.log("Favorite food is ", food)
+        console.log("Fav color ", color)
+        // const name = person.name
+        // const age = person.age
+        // const cats = person.cats
+
+    </script>
+</body>
+</html>

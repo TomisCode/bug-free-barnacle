@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Handling special cases</title>
+</head>
+<body>
+
+
+
+    <script>
+
+        var familymember = "Tomi";
+
+        switch(familymember) {
+            case "Tomi":
+                console.log("Hi Tomi")
+                break;
+            case "Molly":
+                console.log("Hi Molly")
+                break;
+            default:
+            console.warn("Not handled")
+            break;
+        }
+
+
+        var name = "Tomi";
+
+            if(name == "Tomi"){
+                console.log("AWESOME");
+            } else if(name == "Chevy") {
+                console.log("MEOW")
+            } else if(name == "Findus") {
+                console.log("Little meow")
+            } else {
+                console.warn("Not handled")
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event Listeners</title>
+</head>
+<body>
+
+    <button class="btn btn-primary btn-lg js-button">
+        CLICK ME, AND SEND ME TO THE MOON!!!!
+    </button>
+
+    <div id="totalClicks"></div>
+
+    <script>
+    // event listener click, keypress, blur // btn.innerText = "Click me plx!!!"
+
+        var btn = document.querySelector(".js-button")
+        var totalClicks = 0
+        btn.addEventListener('click', function(event) {
+                totalClicks = totalClicks + 1;
+               //totalClicks++
+        document.getElementById("totalClicks").innerText = totalClicks
+        })
+
+    </script>
+</body>
+</html>

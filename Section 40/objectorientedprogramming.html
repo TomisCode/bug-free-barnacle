@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Object Oriented Programming</title>
+</head>
+<body>
+
+    <h1>Learning about OOP</h1>
+
+
+
+<div>
+    <script>
+        class Person {
+
+constructor(name, age, food) {
+    this.name = name
+    this.age = Number(age)
+    this.food = food
+}
+
+makeSound() {
+    console.log(
+        this.name + // Tomi
+        " says mmmmm to " +
+        this.food // Lasagna
+    )
+}
+}
+
+const tomi = new Person("Tomi", 20, "lasagna")
+tomi.makeSound()
+const molly = new Person("Molly", 5, "fish tacos")
+molly.makeSound()
+
+    </script>
+</body>
+</html>

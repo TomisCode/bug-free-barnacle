@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IIFE</title>
+</head>
+<body>
+
+
+
+
+    <script>
+        /*IIFE = Immidiately Invoked Function Expression*/
+        var getName = (function() {
+            return document.querySelector(".js-customName").value
+        })(); /*This is an IIFE with an anonymous function*/
+
+        (function LoadApp() {
+            console.log("App is loading")
+            //.........
+            console.log("App is loaded")
+        })();
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>While loops</title>
+</head>
+<body>
+
+<h1>Learning about WHILE LOOOOPS</h1>
+<h1>List</h1>
+<ul class="js-list"></ul>
+
+
+<div>
+    <script>
+     /*   var num = Number(prompt("Give me a number"))
+        var startingNum = 1
+     while(startingNum <= num) {
+        console.log(startingNum)
+
+        startingNum++
+     }*/
+
+     var ul = document.querySelector(".js-list")
+     var html = ''
+
+     var num = Number(prompt("I need a number. You got one for me?"))
+     var startingNum = 1
+
+     while(startingNum <= num) {
+         html = html + "<li>Iteration: " + startingNum + "</li>"
+         startingNum++
+     }
+
+     ul.innerHTML = html
+        
+    </script>
+</body>
+</html>

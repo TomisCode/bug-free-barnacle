@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>For loops</title>
+</head>
+<body>
+
+<h1>Learning about FOR LOOOOPS</h1>
+
+<div>
+
+   
+
+
+
+    <script>
+        // I = interval
+        var names = ["Tomi", "Molly", "Leo", "Banditta"]
+
+       /* for(var i = 0; i < names.length; i++) {
+            var currentName = name[i].toLowerCase() + "@gmail.com"
+            console.log(currentName)
+        }*/
+
+    
+        var words = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim vero nemo, deleniti neque atque animi rerum doloribus, quam ratione tempore quod ipsam tenetur hic quae delectus tempora error nulla. Unde commodi error ullam non quos perspiciatis iste, saepe consequuntur dicta est provident blanditiis beatae, numquam aliquid quo reprehenderit, reiciendis ipsum." .split(" ")
+       
+        for(var i = 0; i < words.length; i++) {
+            var currentEmail = words[i].toLowerCase() + "@gmail.com"
+           
+            if(i% 2 ==0) {
+                continue;
+            }
+           
+            /*
+           if(i==10) {
+            break;
+           }*/
+
+            console.log(i, currentEmail)
+        }
+
+
+
+
+
+        /*
+        function toEmailAdress(name) {
+            return name.toLowerCase() + "@gmail.com"
+        }*/
+
+    
+        /*
+        for(var i=0; i < 10; i++) {
+            console.log(i)
+        } */
+        
+    </script>
+</body>
+</html>

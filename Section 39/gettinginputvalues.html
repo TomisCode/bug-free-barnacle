@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Getting input values</title>
+</head>
+<body>
+
+<input type="text" class="form-control js-name">
+
+<h2>Hello
+    <span class="js-change-name"></span>
+</h2>
+
+    <script>
+        var input = document.querySelector(".js-name")
+        var nameElem = document.querySelector(".js-change-name")
+       // callback function
+        input.addEventListener('keyup', function(event) {
+            console.log(event.target.value)
+            nameElem.innerText = event.target.value
+        })
+
+    </script>
+</body>
+</html>

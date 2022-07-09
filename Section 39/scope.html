@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scope in JavaScript terms</title>
+</head>
+<body>
+
+    <script>
+  var course = "JavaScript for Beginners"; //This is a global variable//
+
+  //This is a global function//
+  (function doAthing() {
+      //This is a local variable, only accessible in the local ecosystem
+      var student = "Tomi Jones"
+      console.log("!!!", student)
+      console.log("!!!", course)
+     /* return course*/
+  })();
+
+  //Exec the function//
+  doAthing(course)
+//Console log, will not work because it is outside of the scope
+  console.log("OUT OF SCOPE:", student)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>String Manipulation</title>
+</head>
+<body>
+
+    <h1 id="sentence">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla 
+        rhoncus, ligula sit amet aliquam dapibus, enim justo efficitur 
+        quam, pulvinar tempus massa nisl nec diam. Interdum et malesuada 
+        fames ac ante ipsum primis in faucibus.
+    </h1>
+
+
+
+    <script>
+        var sentenceNode = document.getElementById("sentence")
+        var sentence = sentenceNode.innerText
+
+        var upperSentence = sentence.toUpperCase() /*changes the string to uppercase*/
+        var lowerSentence = sentence.toLowerCase() /*changes the string to lowercase*/
+        var firstElevenChars = sentence.substr(0, 11)
+
+        var allWords =sentence.split(" ") /*Will split the sentene*/
+        var bracketWords = "(" + allWords.join(")(") + ")" /*This will give each word brackets on each side*/
+        var bracketWords =  allWords.join(")(") /*This will give the words bracket on only one side*/
+        console.log(allWords)
+        sentenceNode.innerText= bracketWords
+
+        var firstThreeWords = allWords.slice(0,3)
+        /*allWords.slice(5)*/
+
+        var middleWords = allWords.slice(5,10)
+        var makeSentence = middleWords.join(" ")
+
+        sentenceNode.innertext = makeSentence
+
+
+
+        /*"Split anything in here".split(" ")*/
+        /*words = sentence.split(" ")*/
+
+        /*console.log("Sentence:", sentence)*/
+
+    </script>
+</body>
+</html>

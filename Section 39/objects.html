@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Objects</title>
+</head>
+<body>
+
+<h1>Learning about objects</h1>
+
+<div>
+
+
+
+    <script>
+        var name = "Tomi;" //Variable
+        function something() {} //Function
+        var obj = {
+            'name' : 'Tomi', //Property
+            'sound' : function () {} //Method
+        }
+
+        //Object Syntax
+        var objectName = {
+            'key': 'value',
+            'key2': 'value2'
+        }
+
+        objectName['key'] //Value
+        objectName['key2'] //Value2
+
+person = {
+    "name": "Tomi", 
+    "age" : 20, 
+    "cats" : 2
+}
+
+/*
+person.age = 20
+person.name = Tomi 
+person.cats = 2 */
+
+person["sound"] = function() {
+    console.log("meow");
+}
+
+person.getCats = function() {
+    alert(this.name + "has" + this.cats)
+}
+    </script>
+</body>
+</html>

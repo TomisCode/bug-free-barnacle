@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Extended classes</title>
+</head>
+<body>
+
+    <h1>Learning about extended classess</h1>
+
+
+
+<div>
+    <script>
+  class Animal {
+            constructor(species, weight, height) {
+                this.species = String(species)
+                this.weight = Number(weight)
+                this.height = Number(height)
+            }
+
+            getInfo() {
+                console.log( this.species + " weighs " + this.weight + " and is " + this.height + " tall" )
+            }
+
+            speak() {
+                console.log("I SAY A THING")
+            }
+        }
+
+        class Cat extends Animal {
+            constructor(species, weight, height) {
+                super(species, weight, height)
+
+                this.color = "Grey"
+            }
+
+            sleep() {
+                console.log(this.species + " is having a nap, and she loves it")
+                return this
+            }
+
+            eat() {
+                console.log(this.species + " eating her favorite food")
+                return this
+            }
+
+            speak() {
+                console.log("MEOWWWWWWW")
+                return this
+            }
+
+
+        }
+
+
+        const molly = new Cat("cat", 11, 13)
+        molly.sleep().speak().sleep().eat()
+        console.log(molly)
+        molly.getInfo()
+
+
+        //const mainecoon = new Animal("Mainecoon", 150, 10)
+       // mainecoon.getInfo()
+
+    </script>
+</body>
+</html>

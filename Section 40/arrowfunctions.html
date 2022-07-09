@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Arrow functions</title>
+</head>
+<body>
+
+    <h1>Learning about Arrow Functions</h1>
+
+
+
+
+<div>
+    <script>
+const arr = ["JavaScript", "Python", "PHP"]
+
+arr.forEach(language => {
+    console.log(language)
+});
+
+setTimeout(() => {
+    console.log("YAY I WAITED")
+    console.log("YAY I WAITED")
+    console.log("YAY I WAITED")
+    console.log("YAY I WAITED")
+    console.log("YAY I WAITED")
+    console.log("YAY I WAITED")
+    console.log("YAY I WAITED")
+    console.log("YAY I WAITED")
+    console.log("YAY I WAITED")
+    console.log("YAY I WAITED")
+}, 3000)
+
+
+greet = (name, place) => `Hello ${name} ${place}`
+
+const hi = greet("Tomi", "Norway")
+console.log(hi)
+
+function greet(name, place) {
+    this.name = "name"
+    console.log(this.name)
+    return "Hello " + name + " " + place;
+}
+    </script>
+</body>
+</html>

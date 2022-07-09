@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>For each loops</title>
+</head>
+<body>
+
+<h1>Learning about FOR EACH LOOOOPS</h1>
+
+<ul>
+    <li class="js-text">Item 1</li>
+    <li class="js-text">Item 2</li>
+    <li class="js-text">Item 3</li>
+    <li class="js-text">Item 4</li>
+    <li class="js-text">Item 5</li>
+    <li class="js-text">Item 6</li>
+    <li class="js-text">Item 7</li>
+    <li class="js-text">Item 8</li>
+    <li class="js-text">Item 9</li>
+    <li class="js-text">Item 10</li>
+    <li class="js-text">Item 11</li>
+    <li class="js-text">Item 12</li>
+    <li class="js-text">Item 13</li>
+    <li class="js-text">Item 14</li>
+    <li class="js-text">Item 15</li>
+</ul>
+
+
+<div>
+    <script>
+
+        var lis = document.querySelectorAll(".js-text")
+
+        lis.forEach(function(node, index) {
+            if(index >= 10) {
+                node.remove()
+                return false
+            }
+            //console.log(node.innerText)
+            node.innerText = (index * 12) + " is the number of lifes a cat has "
+        })
+
+
+       // var names = ["Tomi", "Molly", "Banditta", "Bandido", "Bandit"]
+
+       /* names.forEach(function(name, index) {
+            console.log(index, name)
+        }) */
+
+       /* for(var i = 0; i < names.length; i++) {
+            console.log(names[i])
+        }*/
+
+        /*
+        array.forEach(element => { 
+            
+        });*/
+
+       /* for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+            
+        }*/
+    </script>
+</body>
+</html>

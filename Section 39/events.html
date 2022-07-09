@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Events</title>
+</head>
+<body>
+
+
+<button class="btn btn-primary" type="button" onClick="clickME()">
+    CLICK ME!
+</button>
+<br>
+<br>
+    <input type="number" class="form-control" style='padding: 30px; font-size: 30px; color: red; border: 1px solid pink;'/>
+<br>
+<button class="btn1" style='background-color: teal; color: black; font-size: 20px;' onClick="calculate()">Add 100</button>
+<br>
+<br>
+    <h1>The total is: <span>N/A</span></h1>
+
+    <script>
+    /*var totalClicks = 0
+    function clickME() {
+        totalClicks++
+        console.log("You have clicked this button " + totalClicks, "times")
+        console.log("CLICK")
+    }*/
+
+    var num = 100
+
+    function calculate() {
+        var input = document.querySelector(".form-control")
+        var value = Number(input.value)
+        var totalValue = value + num;
+    }
+
+    var h1 = document.querySelectorAll("h1")[1]
+    var span = h1.querySelector("span")
+
+    span.innerText = totalValue;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hoisting</title>
+</head>
+<body>
+
+    <script>
+       /* (function getPerson() {
+            if(myName === undefined) {
+                myName = "Tomi"
+            }
+
+            console.log("Var not set yet", myName)
+            console.log("Var is set", myName)
+
+            var myName
+        })(); */
+
+        function getPoison(name) {
+            var name;
+            if(name === undefined) {
+                myName = "Tomi"
+            }
+
+            console.log("A thing", name)
+            var name = "Whatever"
+        }
+
+
+
+      //  console.log("Name is", myName) 
+    </script>
+</body>
+</html>

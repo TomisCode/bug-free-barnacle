@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>A guessing game </title>
+</head>
+
+    <style> 
+    
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+    </style>
+
+<body>
+
+<h1>Try to guess the right number, and you will be rewarded with a nice looking trophy</h1>
+
+
+<div>
+    <script>
+        
+        var theMagicNumber = 20
+        var body = document.querySelector("body")
+        
+        while(true) {
+            var num = Number(prompt ("What is your age?"))
+        if(num && num == theMagicNumber) {
+                // You have WON
+                body.style.backgroundColor = "black"
+                body.style.color = "yellow"
+                body.innerHTML = "<h1 style='text-align: center;'>YOU ARE THE NEW CHAMPION!!!!</h1> <br> <img src='champion.png' alt='champion' style= 'width: 400px; height: 750px;' class='center'>"
+                alert("!!!!!!CONGRATULATION; YOU ARE THE WINNER!!!!!!!!")
+                break;
+            } 
+          
+         }
+    
+    
+
+    </script>
+</body>
+</html>
